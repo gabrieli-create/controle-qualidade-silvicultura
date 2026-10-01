@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Controle de Qualidade - Silvicultura</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+
+    <img
+        src="logo-larsil.png"
+        alt="Larsil Serviços Florestais"
+        class="logo">
+
+    <h1>Controle de Qualidade Silvicultural</h1>
+
+    <p>Avaliação de operações de campo</p>
+
+</header>
+
+    <main>
+
+        <section class="card">
+
+            <h2>🌱 Avaliação de Plantio</h2>
+
+<div class="campo">
+    <label for="empresa">Empresa</label>
+    <input type="text" id="empresa" placeholder="Digite a empresa">
+</div>
+
+<div class="campo">
+    <label for="municipio">Município</label>
+    <input type="text" id="municipio" placeholder="Digite o município">
+</div>
+
+<div class="campo">
+    <label for="fazenda">Fazenda</label>
+    <input type="text" id="fazenda" placeholder="Digite a fazenda">
+</div>
+
+            <div class="campo">
+                <label for="talhao">Talhão</label>
+                <input type="text" id="talhao" placeholder="Digite o talhão">
+            </div>
+
+            <div class="campo">
+                <label for="equipe">Equipe</label>
+                <input type="text" id="equipe" placeholder="Digite a equipe">
+            </div>
+
+            <button onclick="iniciarAvaliacao()">
+                Iniciar avaliação
+            </button>
+
+            <button
+    type="button"
+    class="botao-secundario"
+    onclick="mostrarHistorico()">
+    📋 Histórico de avaliações
+</button>
+
+<button
+    type="button"
+    class="botao-secundario"
+    onclick="exportarExcel()">
+    📊 Exportar avaliações para Excel
+</button>
+
+        </section>
+
+    </main>
+
+<!-- Biblioteca de mapas Leaflet -->
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
+<!-- Biblioteca para exportação Excel -->
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+<!-- Código do aplicativo -->
+<script src="app.js"></script>
+
+</body>
+
+</html>
